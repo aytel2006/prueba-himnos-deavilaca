@@ -1,0 +1,36 @@
+/* Estilos con problemas de responsividad intencionados */
+.hymnsTable {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 800px; /* Bug: tabla muy ancha para móviles */
+}
+
+.hymnsTable > thead > tr > th,
+.hymnsTable > tbody > tr > td {
+  border: 1px solid;
+  padding: 8px;
+  /* Bug: sin responsive behavior */
+}
+
+/* Bug: No hay media queries para móviles */
+.hymnsTable th:nth-child(1) {
+  width: 80px;
+}
+
+.hymnsTable th:nth-child(2) {
+  width: 300px; /* Bug: muy ancho para móviles */
+}
+
+.hymnsTable th:nth-child(3) {
+  width: 80px;
+}
+
+.hymnsTable th:nth-child(4) {
+  width: 340px; /* Bug: controles muy anchos */
+}
+
+/* Estilos faltantes para el dialog */
+.dialog {
+  /* Bug: estilos del dialog no están definidos correctamente */
+}
