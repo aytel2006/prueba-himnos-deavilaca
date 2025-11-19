@@ -44,7 +44,9 @@ export default function Home() {
       </div>
       <p style={{ padding: "10px" }}>
         Idioma
-        <select>
+        <select onClick={(e)=>{
+           console.log("Cambiaste el idioma: ",e.target.hymnNumber)
+        }}>
           <option value="spa">Español</option>
           <option value="eng">Ingles</option>
           <option value="por">Portuges</option>
